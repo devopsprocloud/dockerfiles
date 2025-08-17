@@ -1,5 +1,5 @@
 ARG version 
-FROM centos:${version}
+FROM centos:${version:-7}
 ARG username 
 RUN adduser $username
 USER $username 
