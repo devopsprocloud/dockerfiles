@@ -1,5 +1,5 @@
 ARG version 
-FROM almalinux:${version}
+FROM centos:${version}
 ARG username 
 RUN adduser $username
 USER $username 
